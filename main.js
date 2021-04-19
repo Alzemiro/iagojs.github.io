@@ -1,4 +1,10 @@
-import { paragraphFactory } from '/factorys.js';
+
+const paragraphFactory = (content) => {
+    if (content === null) return
+    var paragraph = document.createElement("p");
+    paragraph.innerHTML = content
+    return paragraph;
+}
 
 const getSection = document.getElementById("list");
 
